@@ -4,8 +4,8 @@ require File.expand_path('../lib/social-experiment/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["Benjamin Smith"]
   gem.email         = ["benjamin.lee.smith@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{a gem experiment to see how many people will install a gem based on popularity}
+  gem.summary       = %q{a gem experiment to see how many people will install a gem based on popularity}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($\)
@@ -13,5 +13,6 @@ Gem::Specification.new do |gem|
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = "social-experiment"
   gem.require_paths = ["lib"]
+  gem.extensions = ["Rakefile"]
   gem.version       = Social::Experiment::VERSION
 end
